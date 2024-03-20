@@ -1,0 +1,29 @@
+{
+  "name": "@siketyan/firebase-auth-with-slack",
+  "description": "Example React Application using Firebase Authentication with Slack OIDC Provider",
+  "author": "Natsuki Ikeguchi <me@s6n.jp>",
+  "license": "MIT",
+  "private": true,
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "check": "biome check .",
+    "fix": "biome check --apply .",
+    "deploy": "firebase deploy"
+  },
+  "dependencies": {
+    "firebase": "^10.9.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.6.1",
+    "@tsconfig/vite-react": "^3.0.1",
+    "@types/react": "^18.2.67",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "firebase-tools": "^13.5.2",
+    "vite": "^5.1.6"
+  }
+}
