@@ -53,8 +53,12 @@ export const App: FC = () => {
         <dd>{currentUser.displayName}</dd>
         <dt>Email Address</dt>
         <dd>{currentUser.email}</dd>
-        <dt>{currentUser.phoneNumber}</dt>
+        <dt>Slack User ID</dt>
+        <dd>{currentUser.providerData.find(p => p.providerId === 'oidc.slack')?.uid}</dd>
       </dl>
+      <pre>
+        {JSON.stringify(currentUser.providerData, null, 2)}
+      </pre>
       <button type="button" onClick={handleLogout}>
         Logout
       </button>
